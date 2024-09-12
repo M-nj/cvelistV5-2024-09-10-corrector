@@ -30,7 +30,7 @@ jobs:
     environment: deployment
     runs-on: ubuntu-latest
     env:
-      CVE_SERVICES_URL: https://cveawg.mitre.org
+      CVE_SERVICES_URL: ${{ vars.CVE_SERVICES_URL }}
       CVE_SERVICES_RECORDS_PER_PAGE: 500
       CVE_ORG_URL: https://www.cve.org
       CVES_BASE_DIRECTORY: cves
